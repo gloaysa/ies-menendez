@@ -1,0 +1,11 @@
+<article class='left-nav'>
+  <div class='left-nav__title'>
+    <h1>Agregador de contenidos</h1>
+  </div>
+  <section class='left-nav__section' *ngFor='let content of contentList'>
+    <h2>{{ content.title }}</h2>
+    <hr>
+    <p>{{ content.content }}</p>
+    <img *ngIf='content.media' src='' alt='' [src]='content.media'>
+  </section>
+</article>

@@ -1,0 +1,10 @@
+<article class='post'>
+  <section class='post__section' *ngFor='let post of postList'>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+
+    <img *ngIf='post.media' src='' alt='' [src]='post.media'>
+
+    <p *ngIf='post.more'>{{ post.more }}</p>
+  </section>
+</article>
