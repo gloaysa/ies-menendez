@@ -1,0 +1,17 @@
+{
+  "linters": {
+    "src/app/**/*.ts": [ "tslint ./tslint.json --fix", "git add" ],
+    "src/app/**/*.{js,ts,html,scss}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "ignore": [
+    "package.json",
+    "tsconfig.json"
+  ]
+}
