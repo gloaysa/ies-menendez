@@ -1,2 +1,5 @@
-<gl-new-school-page *ngIf='false'></gl-new-school-page>
-<gl-old-school-page></gl-old-school-page>
+<gl-new-school-page *ngIf='!oldSchool'></gl-new-school-page>
+<gl-old-school-page *ngIf='oldSchool'></gl-old-school-page>
+
+
+<gl-bloody-text *ngIf='showBloodyText'></gl-bloody-text>

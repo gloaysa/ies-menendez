@@ -6,10 +6,12 @@ import { NewSchoolModule } from './pages/new-school/new-school.module';
 import { OldSchoolModule } from './pages/old-school/old-school.module';
 
 import { AppComponent } from './app.component';
+import { BloodyTextComponent } from './components/bloody-text/bloody-text.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BloodyTextComponent
   ],
   imports: [
     BrowserModule,
