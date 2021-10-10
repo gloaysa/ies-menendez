@@ -12,3 +12,18 @@ gl-bloody-text {
   top: 50px;
   text-align: center;
 }
+
+.app__video {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 999;
+
+  &--show {
+    display: block;
+  }
+}

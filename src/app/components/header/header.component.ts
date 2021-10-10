@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'gl-header',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Output() bannerClicked = new EventEmitter();
   navList = [
     'Nuestro Centro',
     'Profesores',

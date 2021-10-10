@@ -10,7 +10,7 @@ body {
 
 .title {
   font-weight: 900;
-  font-size: 20vw;
+  font-size: 16vw;
   margin: 0;
   filter: url(#goo);
   position: relative;
@@ -30,26 +30,26 @@ body {
   animation: drop 3s infinite both;
 
   &:nth-child(1) {
-    left: 14%;
+    left: 24%;
   }
 
   &:nth-child(2) {
-    left: 39%;
+    left: 40%;
     animation-delay: -.4s;
   }
 
   &:nth-child(3) {
-    left: 55%;
+    left: 56.5%;
     animation-delay: -1.5s;
   }
 
   &:nth-child(4) {
-    left: 82%;
+    left: 72%;
     animation-delay: -.8s;
   }
 
   &:nth-child(5) {
-    left: 90.5%;
+    left: 82%;
     animation-delay: -1.3s;
   }
 }

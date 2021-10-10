@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'gl-new-school-page',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-school.page.scss']
 })
 export class NewSchoolPage {
+  @Input() partyHasStarted = false;
+  @Output() startTheParty = new EventEmitter();
 
+  bannerClicked() {
+    if (!this.partyHasStarted) {
+      this.startTheParty.emit();
+    }
+  }
 }

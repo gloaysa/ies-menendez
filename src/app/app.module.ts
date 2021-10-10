@@ -7,11 +7,13 @@ import { OldSchoolModule } from './pages/old-school/old-school.module';
 
 import { AppComponent } from './app.component';
 import { BloodyTextComponent } from './components/bloody-text/bloody-text.component';
+import { AbcComponent } from './news/abc/abc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BloodyTextComponent
+    BloodyTextComponent,
+    AbcComponent
   ],
   imports: [
     BrowserModule,
