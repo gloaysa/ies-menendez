@@ -1,1 +1,29 @@
-<p>old-school works!</p>
+<div class='old-school'>
+  <div class='old-school__header'>
+    <img src='/assets/images/old_school/logo.png' alt='logo'>
+    <h1 class='header-title'>IES Manuel Azaña</h1>
+  </div>
+
+  <div class='old-school__top-content'>
+    <div class='top-content__nav'>
+      <ul class='nav'>
+        <li
+          class='nav-item'
+          [ngClass]="{'nav-item--active': item.active}"
+          (click)='selectItem(i)'
+          *ngFor='let item of ulItems; index as i'
+        >
+          <a [routerLink]='item.url'>{{item.title}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <gl-featured [title]="selectedItem?.title" [content]='selectedItem?.content'></gl-featured>
+
+  </div>
+
+  <div class='old-school__feed'>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

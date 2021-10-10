@@ -1,0 +1,18 @@
+.featured {
+  padding: 20px;
+  h2 {
+    color: crimson;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .featured-text {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px dashed;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px;
+  }
+}
