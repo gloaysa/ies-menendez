@@ -1,0 +1,17 @@
+.old-post {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+.old-post__content {
+  display: flex;
+
+  p {
+    padding: 5px;
+    text-align: justify;
+  }
+}

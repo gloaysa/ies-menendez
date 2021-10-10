@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./old-post.component.scss']
 })
 export class OldPostComponent {
-
 }

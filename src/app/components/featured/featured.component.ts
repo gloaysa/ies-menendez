@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'gl-featured',
   templateUrl: './featured.component.html',
-  styleUrls: ['./featured.component.scss']
+  styleUrls: ['./featured.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class FeaturedComponent {
   @Input() title: string | undefined;
