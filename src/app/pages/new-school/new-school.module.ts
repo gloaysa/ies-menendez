@@ -8,11 +8,11 @@ import { HeaderModule } from '../../components/header/header.module';
 import { LeftNavModule } from '../../components/left-nav/left-nav.module';
 import { PostModule } from '../../components/post/post.module';
 
-import { NewSchoolComponent } from './new-school.component';
+import { NewSchoolPage } from './new-school.page';
 
 @NgModule({
-  declarations: [NewSchoolComponent],
-  exports: [NewSchoolComponent],
+  declarations: [NewSchoolPage],
+  exports: [NewSchoolPage],
   imports: [
     CommonModule,
     HeaderModule,

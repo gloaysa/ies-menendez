@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { NewSchoolModule } from './pages/new-school/new-school.module';
+import { OldSchoolModule } from './pages/old-school/old-school.module';
 
 import { AppComponent } from './app.component';
 
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NewSchoolModule
+    NewSchoolModule,
+    OldSchoolModule
   ],
   providers: [],
   bootstrap: [AppComponent]
