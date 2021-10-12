@@ -9,5 +9,9 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 export class AbcComponent {
   @Input() width = 0;
   @Input() height = 0;
-  @Input() url = '';
+  @Input() set url(url: string) {
+    this.imagePath = `https://pandemiasoftware.com${url}`;
+  }
+
+  imagePath = '';
 }
