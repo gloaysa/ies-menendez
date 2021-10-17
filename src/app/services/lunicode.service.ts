@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 
+import * as Lunicode from 'lunicode';
+
 @Injectable({providedIn: 'root'})
 export class LunicodeService {
   luni;
 
   constructor() {
-    // https://openbase.com/js/lunicode-creepify/documentation
-    this.luni = require('Lunicode');
+    this.luni = Lunicode;
   }
 
   changeMaxHeight(size: number) {
