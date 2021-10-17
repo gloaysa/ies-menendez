@@ -9,11 +9,10 @@
       <ul class='nav'>
         <li
           class='nav-item'
-          [ngClass]="{'nav-item--active': item.active}"
-          (click)='selectItem(i)'
+          routerLinkActive="nav-item--active"
           *ngFor='let item of ulItems; index as i'
         >
-          <a [routerLink]='item.url'>{{item.title}}</a>
+          <a [routerLink]='item.url' >{{item.title}}</a>
         </li>
       </ul>
     </div>

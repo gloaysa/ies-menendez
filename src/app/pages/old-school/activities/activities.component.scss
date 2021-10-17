@@ -1,0 +1,87 @@
+.activities {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 15px;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+.activities__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  padding: 0 15px;
+  color: grey;
+  background-color: blue;
+  cursor: crosshair;
+
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-x {
+    background-color: red;
+    color: white;
+    padding: 0 5px;
+    cursor: none;
+  }
+}
+
+.activities__folders {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 25px;
+
+  a.folders__folder {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .folders__folder {
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      h5 {
+        color: blueviolet;
+      }
+    }
+
+    &--classified {
+      cursor: not-allowed;
+      &:hover {
+        h5 {
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    h5 {
+      color: black;
+    }
+
+    img {
+      margin-bottom: 15px;
+    }
+  }
+
+
+}
+
+
+video,
+ng2-pdfjs-viewer {
+  height: 0;
+  width: 0;
+}

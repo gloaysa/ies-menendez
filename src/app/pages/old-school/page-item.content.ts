@@ -30,4 +30,10 @@ export const pageItemContent: PageItem[] = [
        </div>
     `,
   },
+  {
+    title: 'Activities',
+    url: 'activities',
+    active: false,
+    content: ``,
+  },
 ];

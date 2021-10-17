@@ -6,6 +6,7 @@ import {
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { AbcComponent } from './news/abc/abc.component';
 
@@ -41,7 +42,8 @@ export class AppComponent {
     private readonly countService: CountdownService,
     private readonly popUpService: PopupService,
     private resolver: ComponentFactoryResolver,
-    private viewContainerRef: ViewContainerRef
+    private viewContainerRef: ViewContainerRef,
+    private router: Router
   ) {}
 
   startTheParty() {
@@ -92,6 +94,7 @@ export class AppComponent {
           this.video.nativeElement.onended = () => {
             this.playingVideo = false;
             this.countService.stopTimer();
+            this.router.navigate(['activities']);
           };
         }
       }
