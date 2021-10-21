@@ -1,9 +1,9 @@
 <gl-new-school-page
   [partyHasStarted]='thePartyHasStarted'
   (startTheParty)='startTheParty()'
-  *ngIf='!oldSchool && !playingVideo'
+  *ngIf='false'
 ></gl-new-school-page>
-<gl-old-school-page *ngIf='oldSchool && !playingVideo'></gl-old-school-page>
+<gl-old-school-page *ngIf='true'></gl-old-school-page>
 
 
 <gl-bloody-text *ngIf='showBloodyText && !playingVideo'></gl-bloody-text>
@@ -11,7 +11,7 @@
 <div class='app__video' [ngClass]="{'app__video--show': playingVideo}">
   <video
     #video
-    src='/assets/video/The+Forbidden+Floor.mov'
+    src='/src/assets/video/trailer.mov'
     width='100%'
     height='100%'
     preload='auto'
