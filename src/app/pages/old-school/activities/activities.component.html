@@ -8,12 +8,11 @@
 
     <a
       class='folders__folder'
-      [ngClass]="{'folders__folder--classified': folder.classified}"
+      [ngClass]="{'folders__folder--classified': folder.type === 'classified'}"
       *ngFor='let folder of folders' (click)='onClick(folder)'
     >
-      <img [src]='folder.src' alt='top secret folder'>
+      <img [src]='folder.image' alt='top secret folder'>
       <h5>{{folder.title}}</h5>
-
     </a>
   </div>
 
@@ -22,18 +21,18 @@
   <ng2-pdfjs-viewer
     #pdfViewer
     class='activities__pdf-viewer'
-    [downloadFileName]="'mytestfile.pdf'"
+    downloadFileName='activities__pdf.pdf'
     [openFile]="false"
     [viewBookmark]="false"
     [download]="false"
     [fullScreen]='true'
     [diagnosticLogs]='false'
-    pdfSrc='/assets/docs/intro.pdf'
+    [pdfSrc]='currentPdfSrc'
   ></ng2-pdfjs-viewer>
 
   <video
     #video
-    src='/assets/video/The+Forbidden+Floor.mov'
+    src='/src/assets/video/video1.mov'
     width='100%'
     height='100%'
     preload='auto'
