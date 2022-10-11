@@ -2,15 +2,15 @@ import { Post } from './post.interface';
 
 export const postContent: Post[] = [
   {
-    title: 'HORARIO CURSO 21/22',
+    title: 'HORARIO CURSO 22/23',
     content: 'Comenzamos el curso con todos los niveles en presencialidad 100%. Al igual que en el curso anterior, establecemos dos horarios escalonados con el objetivo de evitar aglomeraciones a las entradas y salidas, así como durante los recreos, además de facilitar la toma de temperatura a primera hora.\n' +
       'Únicamente tendrán séptimas horas los grupos de 1º, 2º y 3º ESO y los que asistan a las clases de pendientes. Los horarios por nivel serán los siguientes:',
     media: '/assets/images/new_school/horarios.png',
     more: ''
   },
   {
-    title: 'DISTRIBUCIÓN DE NIVELES POR EDIFICIO CURSO 21/22',
-    content: 'En el curso 2021/2022 mantenemos la distribución de niveles por edificio:\n' +
+    title: 'DISTRIBUCIÓN DE NIVELES POR EDIFICIO CURSO 22/23',
+    content: 'En el curso 2022/2023 mantenemos la distribución de niveles por edificio:\n' +
       '\n' +
       'Edificio Azaña    1º ESO y 1º BACH\n' +
       'Edificio Castilla  3º ESO y 2º BACH\n' +
