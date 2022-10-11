@@ -10,7 +10,7 @@ export class AbcComponent {
   @Input() width = 0;
   @Input() height = 0;
   @Input() set url(url: string) {
-    this.imagePath = `https://pandemiasoftware.com${url}`;
+    this.imagePath = `https://iesmenendezpelayo.loaysa.com${url}`;
   }
 
   imagePath = '';
