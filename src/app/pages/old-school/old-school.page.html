@@ -8,11 +8,12 @@
     <div class='top-content__nav'>
       <ul class='nav'>
         <li
+          [routerLink]='item.url'
           class='nav-item'
           routerLinkActive="nav-item--active"
           *ngFor='let item of ulItems; index as i'
         >
-          <a [routerLink]='item.url' >{{item.title}}</a>
+          <a>{{item.title}}</a>
         </li>
       </ul>
     </div>

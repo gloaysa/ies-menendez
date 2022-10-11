@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 import { PdfJsViewerComponent } from 'ng2-pdfjs-viewer';
+
 import { Folder } from './folder.interface';
 
 import { KEY_CODE } from './key-code.enum';
