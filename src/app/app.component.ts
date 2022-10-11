@@ -2,7 +2,7 @@ import {
   Component,
   ComponentFactoryResolver,
   ComponentRef,
-  ElementRef,
+  ElementRef, OnInit,
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
@@ -22,7 +22,7 @@ import { popupContent } from './popup.content';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('video') video: ElementRef<HTMLVideoElement> | undefined;
   title = 'ies-menendez';
 
@@ -45,6 +45,15 @@ export class AppComponent {
     private viewContainerRef: ViewContainerRef,
     private router: Router
   ) {}
+
+  ngOnInit() {
+    this.router.navigate(['news']);
+  }
+
+  goToOldSchool() {
+    this.router.navigate(['activities'])
+      .then(() => this.oldSchool = true);
+  }
 
   startTheParty() {
     this.thePartyHasStarted = true;

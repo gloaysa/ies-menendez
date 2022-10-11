@@ -1,6 +1,7 @@
 <gl-new-school-page
   [partyHasStarted]='thePartyHasStarted'
   (startTheParty)='startTheParty()'
+  (goToOldSchoolWithoutParty)='goToOldSchool()'
   *ngIf='!oldSchool && !playingVideo'
 ></gl-new-school-page>
 <gl-old-school-page *ngIf='oldSchool && !playingVideo'></gl-old-school-page>
